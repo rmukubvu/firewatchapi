@@ -1,0 +1,21 @@
+server:
+  port: 8083
+spring:
+  data:
+    mongodb:
+      host: localhost
+      database: inspection-db
+      auto-index-creation: true
+      port: 27017
+    redis:
+      host: localhost
+      port: 6379
+      repositories:
+        enabled: true
+  servlet:
+    multipart:
+      max-file-size: 256MB
+      max-request-size: 256MB
+      enabled: true
+
+
